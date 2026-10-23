@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PASSWORD SCREEN -->
+    <div class="container" id="loginScreen">
+
+        <div class="card">
+            <div class="birthday-icon">🎂</div>
+
+            <h1>HAPPY BIRTHDAY!</h1>
+
+            <p>Hmm... I have a gift for you! 🎁</p>
+            <p>Enter your birthday to unlock it 🔐</p>
+
+            <input 
+                type="password" 
+                id="password"
+                placeholder="MMDDYY"
+            >
+
+            <button onclick="checkPassword()">
+                Unlock My Surprise
+            </button>
+
+            <p id="error"></p>
+        </div>
+
+    </div>
+
+
+    <!-- BIRTHDAY SCREEN -->
+    <div class="container hidden" id="birthdayScreen">
+
+        <div class="birthday-card">
+
+            <div class="hearts">
+                🎂🎉🥳🎉🎂
+            </div>
+
+            <h1>💗Happy Birthday💗 my ANGELA!</h1>
+
+            <h2>Read my message for you.</h2>
+
+            <p class="message">
+                Today is your special day! I hope you know how special and appreciated you are.
+                I wish your birthday is filled with happiness,
+                laughter, love, and beautiful memories. 
+            </p>
+
+            <p class="message">
+                Lets all your wishes and prayers become reality because you deserve all the good things life has to offer. Just remember that I will always here for you. Keep smiling and always stay beautiful in and out enjoy your day! iloveyouuu babyko💙
+            </p>
+
+            <div class="cake">
+                🎂
+            </div>
+
+            <button onclick="playVoice()">
+            🎙️ Play My VM
+            </button>
+
+            <audio id="voiceMessage">
+             <source src="birthday.mp3" type="audio/mpeg">
+            </audio>
+
+            <p id="voiceStatus"></p>
+
+            <div class="footer">
+                Hope you liked it 😉
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
